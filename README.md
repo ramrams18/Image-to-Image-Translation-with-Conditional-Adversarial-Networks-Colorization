@@ -4,13 +4,13 @@
 
 Image-to-Image Translation
 
-In our project we are taking black and white images and converting them into color images. Networks learn the mapping from input channel (L) to output channels (ab) and try to generate image using latent space that can fool the discriminator.
+In the project i took black and white images and converting them into color images. Networks learn the mapping from input channel (L) to output channels (ab) and try to generate image using latent space that can fool the discriminator.
 
-• We are using as CNN Generator and CNN Discriminator to achieve our results.
+• I used CNN Generator and CNN Discriminator to achieve the results.
 
 Process of converting from black and white to color:
 
-• We are going to be using GAN for our image conversion.
+• I'm going to use GAN for image conversion.
 
 • Converting between 2 different color spaces (RGB – LAB)
 
@@ -44,7 +44,7 @@ Required loss functions and architectures designed specifically for the task at 
 
 Goal: A general-purpose solution to image-to-image translation problems.
 
-Our project: use the same architecture and objective for each image-to-image translation task.
+Project: use the same architecture and objective for each image-to-image translation task.
 
 • By the use of multiple deep learning nets
 
@@ -54,7 +54,7 @@ Our project: use the same architecture and objective for each image-to-image tra
 
 # Section 3: Dataset
 
-There were plenty of datasets to train are available, our team choose CIFAR 10 dataset which is a 10,000 images size of 32x32. We just trained our model through all these datasets not having a validation set because we are only trying to output the generated image in the latent space. To test how good the model to be used in the real-world day to day scenarios we tested on some real images and the results are all in the results section. I made no changes to dataset other than normalizing it (range of (-1,1)) and changing to a different color space there may be some information loss when converting between two different color spaces.
+There were plenty of datasets to train are available, I choose CIFAR 10 dataset which is a 10,000 images size of 32x32. I just trained the model through all these datasets not having a validation set because i am only trying to output the generated image in the latent space. To test how good the model to be used in the real-world day to day scenarios in which i tested on some real images and the results are all in the results section. I made no changes to dataset other than normalizing it (range of (-1,1)) and changing to a different color space there may be some information loss when converting between two different color spaces.
 
 
 # Section 4: Methods
